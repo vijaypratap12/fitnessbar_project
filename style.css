@@ -15,7 +15,7 @@ body {
 }
 
 .section {
-    background-image: url(wave.svg);
+    background-image: url(assets/wave.svg);
     background-position: center;
     height: auto;
     box-shadow: 23px 23px 37px #949494,
@@ -49,7 +49,7 @@ body {
 
 .welcomeNote{
     
-    background-image: url(head_bg.jpg);
+    background-image: url(assets/head_bg.jpg);
     background-position: center;
     background-size: cover;
     height: 600px;
@@ -89,7 +89,7 @@ body {
 
 
 #main2 {
-    background-image: url(f4.jpg);
+    background-image: url(assets/f4.jpg);
 
     background-size: contain;
     background-position: center;
@@ -136,7 +136,7 @@ body {
 
 
 .middle_svg_bg{
-    background-image: url(svg.png);
+    background-image: url(assets/svg.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -145,7 +145,7 @@ body {
 
 
 #main3 {
-    background-image: url(f6.jpg);
+    background-image: url(assets/f6.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -234,7 +234,7 @@ li {
 }
 
 #foot {
-    background-image: url(f3.jpg);
+    background-image: url(assets/f3.jpg);
     background-position: center;
     background-size: cover;
     height: 500px;
@@ -276,7 +276,7 @@ li {
 }
 
 .foot2 {
-    background-image: url(svg.png);
+    background-image: url(assets/svg.png);
     background-position: center;
     height: 300px;
     padding: 70px 30px;
@@ -294,7 +294,7 @@ li {
 */
 
 .footer_section {
-    background-image: url(footer_section_img.png);
+    background-image: url(assets/footer_section_img.png);
     background-position: center;
     background-size: cover;
     margin-top: 150px;
