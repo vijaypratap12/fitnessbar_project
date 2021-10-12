@@ -1,0 +1,335 @@
+.container {
+    border: 0px solid red;
+}
+
+.row {
+    border: 0px solid black;
+}
+
+.col {
+    border: 0px solid green;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.section {
+    background-image: url(wave.svg);
+    background-position: center;
+    height: auto;
+    box-shadow: 23px 23px 37px #949494,
+        -23px -23px 37px #ffffff;
+    position: sticky;
+    top: 0px;
+}
+
+
+
+#collapsibleNavbar {
+
+    border: 0px solid red;
+    position: relative;
+    left: 300px;
+
+
+}
+
+
+
+#collapsibleNavbar ul li a {
+    color: black;
+    font-size: 20px;
+}
+
+#collapsibleNavbar ul li a:hover {
+    background-color: deepskyblue;
+}
+
+
+.welcomeNote{
+    
+    background-image: url(head_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    border-radius:  45% 55% 46% 54% / 7% 46% 54% 93%;
+   
+    
+}
+
+
+
+#main1 {
+    font-size: 30px;
+    font-family: "Eckmann";
+    font-weight: bold;
+    color: darkgoldenrod;
+}
+
+#t4 {
+    text-decoration: none;
+    font-size: 20px;
+    color: darkgoldenrod;
+
+}
+
+#myVideo {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+
+
+#main2 {
+    background-image: url(f4.jpg);
+
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 100px;
+}
+
+
+#t5 {
+    color: blue;
+   
+    margin-top: 150px;
+    text-align: center;
+    font-size: 90px;
+    animation-name: example3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes example3 {
+    from {
+        opacity: 1;
+
+    }
+
+    to {
+        opacity: 0;
+        color: deepskyblue;
+    }
+}
+
+#main2-1 {
+    font-size: 20px;
+    color: white;
+}
+
+#main2-2 {
+    font-size: 20px;
+    color: white;
+    padding-top: 70px;
+    padding-left: 50px;
+}
+
+
+
+.middle_svg_bg{
+    background-image: url(svg.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+#main3 {
+    background-image: url(f6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+/*    margin-top: 230px;*/
+}
+
+
+#main3-2 {
+    font-size: 30px;
+    height: auto;
+}
+
+
+
+#t1 {
+    text-decoration: none;
+    background-color: aliceblue;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: blanchedalmond;
+    color: white;
+
+}
+
+#e1 {
+    font-size: 25px;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+#t2 {
+    height: 400px;
+    margin: 50px;
+}
+
+.card {
+    width: 18rem;
+    height: 350px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 23px 23px 37px #949494,
+        -23px -23px 37px #ffffff;
+
+
+
+
+}
+
+.card:hover {
+    transform: scale(1.25);
+}
+
+#table {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#main4 {
+    color: black;
+    padding: 80px;
+    background-color: white;
+    margin-top: 30px;
+
+}
+
+#main5 {
+    color: black;
+    padding: 80px;
+    background-color: white;
+    margin-bottom: 50px;
+
+
+}
+
+
+
+li {
+    font-size: 20px;
+}
+
+#foot {
+    background-image: url(f3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+#foot li {
+    list-style: none;
+}
+
+
+#foot a {
+    text-decoration: none;
+    color: black;
+}
+
+#foot a:hover {
+    color: deepskyblue;
+
+}
+
+
+
+#foot1 {
+    font-size: 30px;
+    color: black;
+
+}
+
+#foot1-1 {
+    color: black;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#foot1-2 {
+    color: black;
+    font-size: 20px;
+
+}
+
+.foot2 {
+    background-image: url(svg.png);
+    background-position: center;
+    height: 300px;
+    padding: 70px 30px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+/*
+.foot2:hover{
+     background-image: url(footer_section_img.png);
+    background-position: center;
+    background-color: red;
+    
+}
+*/
+
+.footer_section {
+    background-image: url(footer_section_img.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 150px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+/*
+.footer_section:hover{
+     background-image: url(svg.png);
+    background-position: center;
+    background-size: cover;
+  
+    
+}
+*/
+
+#subscribe {
+    text-align: center;
+    margin: 100px 0px;
+
+}
+
+#subscribe input {
+    height: 50px;
+    border-radius: 10px;
+    width: 300px;
+    background: transparent;
+
+}
+
+#down i {
+    font-size: 25px;
+    padding: 0px 5px;
+    color: black;
+
+}

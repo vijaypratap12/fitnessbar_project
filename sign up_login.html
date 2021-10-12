@@ -1,0 +1,300 @@
+<html>
+
+<head>
+    <title>
+        Sign up/login in</title>
+    <link href="css/style.css" type="text/css" rel="Stylesheet" />
+
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5384685fcb.js" crossorigin="anonymous"></script>
+
+
+
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+        *:focus {
+            outline: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: lightskyblue;
+            font-size: 16px;
+            color: #222;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+
+        }
+
+
+
+        #login-box {
+            position: relative;
+            margin: 5% auto;
+            width: 600px;
+            height: 400px;
+            background: #FFF;
+            border-radius: 2px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            display: none;
+        }
+
+        #signup-box {
+            display: block;
+            position: relative;
+            margin: 5% auto;
+            width: 600px;
+            height: 400px;
+            background: #FFF;
+            border-radius: 2px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding: 40px;
+            width: 300px;
+            height: 400px;
+        }
+
+        h1 {
+            margin: 0 0 20px 0;
+            font-weight: 300;
+            font-size: 28px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            display: block;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            padding: 4px;
+            width: 220px;
+            height: 32px;
+            border: none;
+            border-bottom: 1px solid #AAA;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            transition: 0.2s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-bottom: 2px solid #16a085;
+            color: #16a085;
+            transition: 0.2s ease;
+        }
+
+        input[type="submit"] {
+            margin-top: 28px;
+            width: 120px;
+            height: 32px;
+            background: #16a085;
+            border: none;
+            border-radius: 2px;
+            color: #FFF;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: 0.1s ease;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="submit"]:focus {
+            opacity: 0.8;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            transition: 0.1s ease;
+        }
+
+        input[type="submit"]:active {
+            opacity: 1;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+            transition: 0.1s ease;
+        }
+
+        .or {
+            position: absolute;
+            top: 180px;
+            left: 280px;
+            width: 40px;
+            height: 40px;
+            background: #DDD;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            box-sizing: border-box;
+            padding: 40px;
+            width: 300px;
+            height: 400px;
+            background: url(f9.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 0 2px 2px 0;
+
+        }
+
+        .right .loginwith {
+            display: block;
+            margin-bottom: 40px;
+            font-size: 28px;
+            color: #FFF;
+            text-align: center;
+        }
+
+        button.social-signin {
+            margin-bottom: 20px;
+            width: 220px;
+            height: 36px;
+            border: none;
+            border-radius: 2px;
+            color: #FFF;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            transition: 0.2s ease;
+            cursor: pointer;
+        }
+
+        button.social-signin:hover,
+        button.social-signin:focus {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            transition: 0.2s ease;
+        }
+
+        button.social-signin:active {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+            transition: 0.2s ease;
+        }
+
+        button.social-signin.facebook {
+            background: #32508E;
+        }
+
+        button.social-signin.twitter {
+            background: #55ACEE;
+        }
+
+        button.social-signin.google {
+            background: #DD4B39;
+        }
+
+    </style>
+
+
+
+
+
+</head>
+
+<body onload="Myloading();">
+    <div id="loading" class="load">
+        <h1 style="color: #fff; font-family: verdana; font-weight: bold;">
+            <caption>Loading.....</caption>
+        </h1>
+    </div>
+
+
+    <div id="signup-box">
+        <div class="left">
+            <h1>Sign up</h1>
+            <form action="signup_data.php" method="post">
+                <input type="text" name="username" placeholder="Username" />
+                <input type="text" name="email" placeholder="E-mail" />
+                <input type="password" name="password" placeholder="Password" />
+                <input type="password" name="password2" placeholder="Retype password" />
+
+                <input type="submit" value="submit">
+            </form>
+        </div>
+
+        <div class="right">
+            <span class="loginwith">Sign Up with<br />social network</span>
+
+            <button class="social-signin facebook">Log in with facebook</button>
+            <button class="social-signin twitter">Log in with Twitter</button>
+            <button class="social-signin google">Log in with Google+</button>
+
+
+        </div>
+        <div class="or">OR</div>
+    </div>
+
+
+
+
+    <div id="login-box">
+        <div class="left">
+            <h1>Login</h1>
+            <form action="validation_data.php" method="post">
+                <input type="text" name="username" placeholder="Username" />
+                <input type="password" name="password" placeholder="Password" />
+                <input type="submit" value="submit">
+            </form>
+        </div>
+
+        <div class="right">
+            <span class="loginwith">Log in with<br />social network</span>
+
+            <button class="social-signin facebook">Log in with facebook</button>
+            <button class="social-signin twitter">Log in with Twitter</button>
+            <button class="social-signin google">Log in with Google+</button>
+        </div>
+        <div class="or">OR</div>
+    </div>
+
+
+
+    <p style="text-align: center; color: white">already registered<button type="button" class="btn btn-link" onclick="replace()">click here</button>to login</p>
+
+
+
+
+
+    <script>
+        function replace() {
+            document.getElementById("signup-box").style.display = "none";
+            document.getElementById("login-box").style.display = "block";
+        }
+
+    </script>
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        var prloader = document.getElementById('loading');
+
+        function Myloading() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Fitness Bar</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5384685fcb.js" crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        });
+
+    </script>
+
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .container {
+            border: 0px solid red;
+        }
+
+        .row {
+            border: 0px solid green;
+        }
+
+        .col {
+            border: 0px solid blue;
+        }
+
+        .section {
+            background-image: url(assets/svg.png);
+            background-position: center;
+            height: auto;
+            box-shadow: 23px 23px 37px #949494,
+                -23px -23px 37px #ffffff;
+
+        }
+
+        #collapsibleNavbar {
+
+            border: 0px solid red;
+            position: relative;
+            left: 300px;
+
+
+        }
+
+
+
+        #collapsibleNavbar ul li a {
+            color: black;
+            font-size: 23px;
+        }
+
+        #collapsibleNavbar ul li a:hover {
+            background-color: white;
+        }
+
+
+
+
+        #diet_plans {
+            margin-top: 100px;
+            margin-bottom: 200px;
+
+        }
+
+
+        #foot {
+            background-image: url(assets/f3.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+        }
+
+        #foot li {
+            list-style: none;
+        }
+
+
+
+        #foot1 {
+            font-size: 20px;
+            color: black;
+
+        }
+
+        #foot1-1 {
+            color: black;
+            font-size: 20px;
+            margin-left: 50px;
+        }
+
+        #foot1-2 {
+            color: black;
+            font-size: 20px;
+
+        }
+
+        .foot2 {
+            background-image: url(assets/svg.png);
+            background-position: center;
+            height: 300px;
+            padding: 70px 30px;
+        }
+
+        .footer_section {
+            background-image: url(assets/footer_section_img.png);
+            background-position: center;
+            background-size: cover;
+            margin-top: 150px;
+        }
+
+        #subscribe {
+            text-align: center;
+            margin: 100px 0px;
+
+        }
+
+        #subscribe input {
+            height: 50px;
+            border-radius: 10px;
+            width: 300px;
+            background: transparent;
+
+        }
+
+        #down i {
+            font-size: 25px;
+            padding: 0px 5px;
+            color: black;
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <div class="section">
+        <nav class="navbar navbar-expand-md navbar navbar-dark">
+            <img src="assets/logo_img.png" alt="logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Diet_Plans.html">Diet Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Community.html">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign up_login.html"><i class="fa fa-user-circle" style="font-size: 35px; color: black"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row" id="diet_plans">
+            <div class="col">
+                <h1 style="color: deepskyblue">DIET PLANS</h1>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="row" style="margin: 100px 0px">
+            <h1 style="color: deepskyblue">Low-carb, whole-food diet</h1>
+            <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                <div class="card" style="width: 18rem; background-color: deepskyblue">
+                    <img class="card-img-top" src="assets/dp_img1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan Details</h5>
+                        <!--                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">4 Weeks</li>
+                        <li class="list-group-item">Rs.99</li>
+                        <li class="list-group-item">Pdf Format</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Buy Now</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                <div class="card" style="width: 18rem; background-color: deepskyblue">
+                    <img class="card-img-top" src="assets/dp_img2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan Details</h5>
+                        <!--                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">24 Weeks</li>
+                        <li class="list-group-item">Rs.499</li>
+                        <li class="list-group-item">Pdf Format</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Buy Now</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <h2 style="color: deepskyblue">Articles</h2>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Low Carb</h5>
+
+                        <p class="card-text">The low-carb, whole-food diet is perfect for people who need to lose weight, optimize health, and lower their risk of disease.</p>
+                        <a href="#" class="card-link">Read More</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row" style="margin: 200px 0px">
+            <h1 style="color: deepskyblue">Vegan diet</h1>
+            <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                <div class="card" style="width: 18rem; background-color: deepskyblue">
+                    <img class="card-img-top" src="assets/dp_img3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan Details</h5>
+                        <!--                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">4 Weeks</li>
+                        <li class="list-group-item">Rs.99</li>
+                        <li class="list-group-item">Pdf Format</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Buy Now</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                <div class="card" style="width: 18rem; background-color: deepskyblue ">
+                    <img class="card-img-top" src="assets/dp_img4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan Details</h5>
+                        <!--                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">24 Weeks</li>
+                        <li class="list-group-item">Rs.499</li>
+                        <li class="list-group-item">Pdf Format</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Buy Now</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegan Diet</h5>
+
+                        <p class="card-text">The vegan diet has become increasingly popular in the past decade. The diet is based exclusively on plant foods and eliminates all animal products.</p>
+                        <a href="#" class="card-link">Read More</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="row" style="margin: 200px 0px">
+            <h1 style="color: deepskyblue"> Gluten-free diet</h1>
+            <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                <div class="card" style="width: 18rem; background-color: deepskyblue">
+                    <img class="card-img-top" src="assets/dp_img3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan Details</h5>
+                        <!--                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Rs.99</li>
+                        <li class="list-group-item">4 Weeks</li>
+                        <li class="list-group-item">Pdf Format</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                <div class="card" style="width: 18rem; background-color: deepskyblue">
+                    <img class="card-img-top" src="assets/dp_img4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan Details</h5>
+                        <!--                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Rs.499</li>
+                        <li class="list-group-item">24 Weeks</li>
+                        <li class="list-group-item">Pdf Format</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Buy Now</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Gluten free</h5>
+                        <p class="card-text">The gluten-free diet is essential for people who are intolerant to gluten, a protein that is found in wheat, rye, and barley.
+
+                            For optimal health, you should focus on whole foods that are naturally gluten-free. Gluten-free junk food is still junk food.</p>
+                        <a href="#" class="card-link">Read More</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row" id="foot">
+            <div class="col" id="foot1" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                <h1 style="font-weight: bold; color: deepskyblue">fitness bar</h1>
+                <ul>
+                    <li>(0121)243567</li>
+                    <li>info@fitnessbar@gmail.com</li>
+                    <li>Dwarka, Delhi</li>
+                </ul>
+            </div>
+
+            <div class="col" id="foot1-1">
+
+                <h2 style="font-weight: bold; color: deepskyblue">Workouts and Programs</h2>
+                <ul>
+                    <li> Workout Videos</li>
+                    <li> Custom Workouts </li>
+                    <li>Workout Programs</li>
+                    <li> Meal Plans</li>
+                </ul>
+            </div>
+            <div class="col" id="foot1-2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+
+                <h2 style="font-weight: bold;color: deepskyblue">Healthy Living</h2>
+                <ul>
+                    <li>Fitness</li>
+                    <li>Health</li>
+                    <li>Nutrition</li>
+                    <li> Experts</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="foot2">
+        <div class="container">
+            <div class="row">
+                <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                    <h1>Ready to try a Fitness Bar workout?</h1>
+                </div>
+                <div class="col" style="text-align: center" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+
+                    <button type="button" class="btn btn-lg btn-primary">GET STARTED TODAY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="footer_section">
+        <div class="container">
+            <div class="row" id="subscribe">
+                <div class="col">
+                    <h2 style="color: deepskyblue">Subscribe to our newsletter</h2>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="button" class="btn btn-lg btn-primary">Subscribe Now</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col" id="down" style="text-align: center">
+                    <p style="color: black">Fitness Bar | 2021 Copyright &copy; All rights reserved</p>
+                    <i class="fab fa-facebook-square" data-container="body" data-toggle="popover" data-placement="top" data-content="Facebook"></i>
+                    <i class="fab fa-github-square" data-container="body" data-toggle="popover" data-placement="top" data-content="Github"></i>
+                    <i class="fab fa-linkedin" data-container="body" data-toggle="popover" data-placement="top" data-content="Linkedin"></i>
+                    <i class="fas fa-envelope" data-container="body" data-toggle="popover" data-placement="top" data-content="Mail"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        AOS.init();
+
+    </script>
+
+
+
+</body>
+
+</html>
